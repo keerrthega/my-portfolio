@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRI VIDYA MANDIR CBSE SCHOOL</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1E90FF;
+      padding: 16px;
+      position: relative;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      height: 70px;
+    }
+
+    .header-title {
+      text-align: center;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-color: lightblue;
+      padding: 32px;
+      text-align: center;
+    }
+
+    section {
+      padding: 32px;
+    }
+
+    .gallery img {
+      width: 150px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #1E90FF;
+      text-align: center;
+      color: white;
+      padding: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="logo.jpg" alt="School-logo" class="logo" />
+      <div class="header-title">
+        <h1>SRI VIDYA MANDIR CBSE SCHOOL</h1>
+      </div>
+    </div>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">EVENTS</a>
+      <a href="#">CONTACTS</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Our School</h1>
+    <p>Excellence in education and holistic development.</p>
+  </section>
+
+  <!-- Rest of your sections -->
+
+
+<section class="section">
+<h2>About Us</h2>
+  <p>Sri Viya Mandir CBSE School has been nurturing young minds since 1995. <span id="moreText" style="display:none;">Our mission is to create responsible and global citizens through academic excellence and ethical values.</span></p>
+  <button onclick="toggleText()">Read More </button>
+  </section>
+  
+  <section class="section">
+<h2>Upcoming Events</h2>
+  <ul>
+  <li>Science Fair – July 15</li>
+    <li>Sports Day – Aug 1</li>
+    <li>Teacher's Day – Sep 5</li>
+	</ul>
+  </section>
+  
+   <section class="section gallery">
+<h2>Photo gallery</h2>
+  <img src="image5.jpg" alt="event1" />
+  <img src="image6.jpg" alt="event1" />
+  <img src="image7.jpg" alt="event1" />
+  </section>
+  <footer>
+  <p>Contact:0427 -2328358  | Email:sspsvmschool@gmail.com | website:Website: www.sspsvm.com</p>
+</footer>
+ <script>
+ function toggleText() {
+   const text =document.getElementById("moreText");
+   text.style.display =(text.style.display === "none") ? "inline" : "none";
+   </script>
+   </body>
+   </html>
