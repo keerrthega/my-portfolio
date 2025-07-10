@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teacher Feedback Form</title>
+  <style>
+  body{
+    font-family:Arial,sans-serif;
+	background:#f4f4f4;
+	padding:20px;
+	}
+	h2{
+	text-align:center;
+	color:#333;
+	}
+	form {
+	background:#fff;
+	padding:20px;
+	width:400px;
+	border-radius:7px;
+	margin:auto;
+	}
+	label {
+	font-weight:bold;
+	display:block;
+	margin-bottom:5px;
+	color:#555;
+	}
+	input, textarea {
+	width:100%;
+	padding:8px;
+	margin-bottom:15px;
+	border:1px solid #ccc;
+	border-radius:4px;
+	font-size:14px;
+	}
+	input[type="submit"] {
+	background-color:#1E90FF;
+	color:white;
+	border:none;
+	cursor:pointer;
+	}
+	input type[type="submit]:hover {
+	background-color:#0066cc;
+	}
+  </style>
+</head>
+<body>
+  <h2>Teacher Feedback</h2>
+  <form method="POST" action="submit.php">
+    <label>Student Name:</label>
+    <input type="text" name="student" required>
+
+    <label>Subject:</label>
+    <input type="text" name="subject" required>
+
+    <label>Rate the teacher (1 to 5):</label>
+    <input type="number" name="rating" min="1" max="5" required>
+
+    <label>Comments:</label>
+    <textarea name="comments" rows="4"></textarea>
+
+    <input type="submit" value="Submit Feedback">
+  </form>
+</body>
+</html>
