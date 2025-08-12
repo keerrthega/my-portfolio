@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Random Background Color Button </title>
+<style>
+body{
+text-align: center;
+font-family:Arial,sans-serif;
+transition:background-color 0.5s ease;
+}
+button{
+padding:15px 20px;
+font-size:20px;
+cursor:pointer;
+margin-top:20%;
+border:none;
+border-radius:8px;
+background-color:salmon;
+color:white;
+}
+</style>
+</head>
+<body>
+<h1>Click the Random Background Color Button </h1>
+<button id ="colorBtn">Change color </button>
+<p id ="colorCodeDisplay"></p>
+
+<script>
+const button = document.getElementById('colorBtn');
+const colorCodeDisplay = document.getElementById('colorCodeDisplay');
+function getRandomColor() {
+const letters ='0123456789ABCDEF';
+let color='#';
+for(let i =0;i<6;i++){
+const randomIndex = Math.floor(Math.random()* 16);
+color += letters[randomIndex];
+}
+return color;
+}
+
+button.addEventListener('click', function(){
+const newColor = getRandomColor();
+document.body.style.backgroundColor = newColor;
+
+colorCodeDisplay.textContent =`currentColor :${newColor}`;
+
+const phrases = ["Nice color!", "Wow!", "Cool Pick!","Beautiful!","Awesome!"];
+button.textContent = phrases[Math.floor(Math.random()*phrases.length)];
+});
+</script>
+</body>
+</html>
+
